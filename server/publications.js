@@ -9,3 +9,7 @@ Meteor.publish('posts', function(flagged, author, category) {
 Meteor.publish('allPost', function() {
   return Posts.find();
 });
+
+Meteor.publish('comments', function() {
+  return Comments.find();
+});
